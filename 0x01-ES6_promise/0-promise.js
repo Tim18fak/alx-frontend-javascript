@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
     fetch(myNewApi)
