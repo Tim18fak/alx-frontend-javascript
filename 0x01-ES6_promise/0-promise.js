@@ -1,7 +1,7 @@
 function getResponseFromAPI(){
 	return new Promise((resolve,reject) => {
 	
-	fetch(Api)
+	fetch(myNewApi)
 	 .then(response => response.json())
 	 .then( data => resolve(data))
 	 .catch(error => reject(error))
