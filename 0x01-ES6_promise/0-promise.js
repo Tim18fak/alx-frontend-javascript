@@ -1,4 +1,4 @@
-/*function getResponseFromAPI() {
+/* function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
     fetch(myNewApi)
       .then((response) => response.json())
@@ -7,15 +7,15 @@
   });
 }
 
-export default getResponseFromAPI;*/
+export default getResponseFromAPI; */
 function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
-    // API call logic here
-    // ...
+    let responseFromAPI;
+    // API call logic here //
     if (responseFromAPI) {
       resolve(responseFromAPI); // resolve with API response
     } else {
-      reject("Error: API call failed"); // reject with error message
+      reject(new Error('Error: API call failed')); // reject with error message
     }
   });
 }
