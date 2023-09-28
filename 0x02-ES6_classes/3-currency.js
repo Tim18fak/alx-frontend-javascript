@@ -11,12 +11,14 @@ class Currency {
   set code(code) {
     this._code = code;
   }
-	get name(){
-		return this._name;
-	}
-	get code(){
-		 return this._code
-	}
+
+  get name() {
+    return this._name;
+  }
+
+  get code() {
+    return this._code;
+  }
 
   displayFullCurrency() {
     return `${this._name} (${this._code})`;

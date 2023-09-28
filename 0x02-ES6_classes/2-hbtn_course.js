@@ -1,4 +1,4 @@
-/*class HolbertonCourse {
+/* class HolbertonCourse {
   constructor(name, length, students) {
     this.setname(name);
     this.setlength(length);
@@ -87,6 +87,6 @@ class HolbertonCourse {
     }
     this._students = value;
   }
-} 
+}
 
 export default HolbertonCourse;
