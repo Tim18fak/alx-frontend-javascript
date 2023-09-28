@@ -21,7 +21,7 @@ class Pricing{
 		return `${this._amount} ${this._currency.name} (${this._currency.name})`
 	}
 	static convertPrice(amount,conversionRate){
-		try{
+		/*try{
 			if(typeof amount !== 'number' && typeof conversionRate !== 'number'){
 				throw new Error()
 			}
@@ -31,8 +31,8 @@ class Pricing{
 		}
 		catch(error){
 			console.log(error)
-		}
-
+		}*/
+		return amount * conversionRate;
 }
 }
 
