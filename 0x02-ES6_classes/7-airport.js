@@ -9,4 +9,4 @@ class Airport {
   }
 }
 
-export default Airport
+export default Airport;
