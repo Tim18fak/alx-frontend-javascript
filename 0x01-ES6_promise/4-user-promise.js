@@ -1,7 +1,7 @@
-function signUpUser(firstName, lastName){
-	return new Promise((resolve, reject) =>{
-	resolve({ fisrtName: firstName, lastName: lastName  });
-	});
+function signUpUser(firstName, lastName) {
+  return new Promise((resolve) => {
+    resolve({ fisrtName: firstName, lastName });
+  });
 }
 
 export default signUpUser;
