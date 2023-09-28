@@ -12,4 +12,4 @@ class HolbertonClass {
   }
 }
 
-export default HolbertonClass
+export default HolbertonClass;
