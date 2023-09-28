@@ -3,6 +3,8 @@ process.on('unhandledRejection', (err) => {
   console.error(err);
 });
 
-export default function loadBalancer(chinaDownload,USDownload){
-	return Promise.race([chinaDownload,USDownload])
+function loadBalancer(chinaDownload, USDownload) {
+  return Promise.race([chinaDownload, USDownload]);
 }
+
+export default loadBalancer;
