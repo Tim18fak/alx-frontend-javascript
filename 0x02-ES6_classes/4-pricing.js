@@ -26,7 +26,8 @@ class Pricing{
 				throw new Error()
 			}
 			let newAmount;
-			newAmount = amount * conversionRate
+			newAmount = amount * conversionRate;
+			return newAmount;
 		}
 		catch(error){
 			console.log(error)
