@@ -1,12 +1,13 @@
-export default function  hasValueFromArray(set, array) {
-  if(array.length === 1){
-    for(const element of array){
-      if (!set.has(element)){
+export default function hasValueFromArray(set, array) {
+  if (array.length === 1) {
+    for (const element of array) {
+      if (!set.has(element)) {
         return false;
+      }
+      return true;
     }
-  return true;
-  }
-  }else{
+  } else {
     return false;
   }
+ 
 }
