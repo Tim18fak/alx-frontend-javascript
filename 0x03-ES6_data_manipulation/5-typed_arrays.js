@@ -6,5 +6,4 @@ export default function createInt8TypedArray(length, position, value) {
   const Message = new DataView(Arr);
   Message.setInt8(position, value);
   return Message;
-
 }

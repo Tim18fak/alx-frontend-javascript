@@ -21,15 +21,15 @@ export default function updateStudentGradeByCity(studentList, city, newGrades) {
   const filteredStudentList = studentList.filter((student) => student.location === city);
   const updatedStudentList = filteredStudentList.map((student) => {
     const grade = newGrades.find((grade) => grade.studentId === student.id);
-
+    const updatedStudent = { ...student };
     // Check if grade is found
     if (grade) {
-      student.grade = grade.grade;
+      updatedStudent.grade = grade.grade;
     } else {
-      student.grade = 'N/A';
+      updatedStudent.grade = 'N/A';
     }
 
-    return student;
+    return updatedStudent;
   });
 
   return updatedStudentList;

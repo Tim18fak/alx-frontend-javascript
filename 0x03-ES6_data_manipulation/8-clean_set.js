@@ -2,7 +2,7 @@ export default function cleanSet(set, startString) {
   const string = [];
   let returnValue;
   if (!startString) {
-   return '';
+    return '';
   }
   for (const val of set) {
     if (val.startsWith(startString)) {
